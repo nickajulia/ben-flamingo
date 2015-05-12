@@ -1,0 +1,252 @@
+
+/*Style.scss*/
+
+@import 'bower_components/normalize-css/normalize.css';
+@import 'foundation';
+
+
+
+/* variables
+---------------------------------------------------------- */
+
+
+/*--- Colors ----*/
+$bodyBg:#fffffd;
+
+
+
+$bodyTextColor:#111111;
+
+
+
+$bodyFont:'merriweather', sans-serif;
+/*--Hero--*/
+
+//$heroBg:#109CFF;
+$heroBg1:rgba(16, 156, 255, .8);
+$heroBg2:rgba(16, 156, 255, 1);
+
+/*-- Section1 --*/
+$roundListBullet:#D3D0C6;
+$roundListBg:#FFCE8E;
+$roundListBgHover:#FFCE8E;
+
+/*--Section2--*/
+$section2Bg:#CDE4F5;
+$section2Border:#D3D0C6;
+
+
+
+/* sitewide
+---------------------------------------------------------- */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+.row{
+	max-width: 550px;
+}
+.rowLg{
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+  .row{
+    max-width: calc(1000px);
+    margin: auto;
+  }
+}
+
+.clearfix:before,
+.site-container:before,
+.site-footer:before,
+.site-header:before,
+.section:before,
+.wrap:before {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after,
+.site-container:after,
+.site-footer:after,
+.site-header:after,
+.section:before,
+.wrap:after {
+	clear: both;
+	content: " ";
+	display: table;	
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	background: $bodyBg;
+	color: $bodyTextColor;
+	font-size: 18px;
+	font-family: $bodyFont;
+	text-align: center;
+	margin:auto;
+}
+
+p{
+	color: $bodyTextColor;
+	font-size: 18px;
+	font-family: $bodyFont;
+	text-align: left;
+
+}
+
+.cb{
+	clear:both;
+}
+
+.mg-btm-sm{
+	margin-bottom: 40px;
+}
+
+/*---- Hero ---*/
+.hero{
+
+	 background: 
+  
+    linear-gradient($heroBg1, $heroBg2),
+    /* bottom, image */
+    url(../img/herobg1.jpg);
+    background-size: cover;
+
+
+	//background-color: $heroBg;
+
+	h1, h2, h3, h4, h5{
+		color: white;
+	}
+}
+.heroInner{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+/*---- Section1 ---*/
+.section1{
+	margin-top: 40px;
+}
+.section1Left{
+
+}
+.section1List
+{
+	list-style: none;
+	text-align: left;
+
+
+}
+
+
+.rounded-list li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin-bottom: 30px;
+    background: $roundListBg;
+    color: #000000;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+    text-align: left;
+    font-size: 18px;
+}
+
+.rounded-list li:hover{
+    background: $roundListBgHover;
+}
+
+.rounded-list li:hover:before{
+      
+}
+
+.rounded-list li:before{
+    content: "Q:";
+    //counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: $roundListBullet;
+    height: 2.5em;
+    width: 2.5em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+   	font-size: 23px;
+}
+
+
+
+
+/*---- Section2 ---*/
+.section2{
+	margin-top: 40px;
+	padding-top: 40px;
+	background-color: $section2Bg;
+	border:2px solid $section2Border;
+}
+
+
+/*--Section 3 --*/
+
+.section3{
+	//margin-top: 40px;
+
+}
+
+.section3Inner{
+	margin-top: 40px;
+}
+
+.section3Headline{
+	margin-bottom: 40px;
+}
+
+.section3BlockGrid {
+  @include block-grid(
+    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+    // Available options: 1-12 by default, and false.
+    $per-row: 4,
+
+    // This controls how much space is between each item in the block grid.
+    // Use a variable or any pixel or em values.
+    $spacing: $block-grid-default-spacing,
+
+    // This controls whether or not base styles come through, set to false to leave out.
+    $base-style: true
+  );
+
+	img{
+		width: 100px;	
+	}
+
+  h1{
+  	font-size: 30px;
+  }
+}
+
+/*Style.scss*/
+
+@import 'mediumscreen';
+@import 'largescreen';
+@import 'XLargecreen'
