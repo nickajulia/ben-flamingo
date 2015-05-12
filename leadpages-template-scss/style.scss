@@ -252,7 +252,7 @@ p{
   @include block-grid(
     // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
     // Available options: 1-12 by default, and false.
-    $per-row: 4,
+    $per-row: 2,
 
     // This controls how much space is between each item in the block grid.
     // Use a variable or any pixel or em values.
@@ -261,6 +261,8 @@ p{
     // This controls whether or not base styles come through, set to false to leave out.
     $base-style: true
   );
+
+
 
 	img{
 		width: 100px;	
@@ -297,8 +299,14 @@ p{
 }
 
 /*--- Section5---*/
-
+.section5{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
 #section5ListWrap {
+
+	margin-top: 20px;
+
 	ol {
     counter-reset: li; /* Initiate a counter */
     list-style: none; /* Remove default numbering */
@@ -376,8 +384,10 @@ border:2px solid $section2Border;
 
 
 .indicates-required{
-	font-size: 16px;
+	font-size: 12px;
 	font-style: italic;
+	margin-bottom: 5px;
+	float: right;
 }
 
 /*--footer --*/
