@@ -6900,6 +6900,12 @@ p {
 .mg-btm-sm {
   margin-bottom: 40px; }
 
+/*--- Button ---*/
+.buttonNew {
+  background-color: #FF9000; }
+  .buttonNew:hover {
+    background-color: #FFC170; }
+
 /*---- Hero ---*/
 .hero {
   background: -webkit-linear-gradient(rgba(16, 156, 255, 0.8), #109cff), url(../img/herobg1.jpg);
@@ -6961,6 +6967,9 @@ p {
   background-color: #CDE4F5;
   border: 2px solid #D3D0C6; }
 
+.section2ButtonWrap {
+  margin-top: 20px; }
+
 /*--Section 3 --*/
 .section3Inner {
   margin-top: 40px; }
@@ -6995,10 +7004,114 @@ p {
   .section3BlockGrid h1 {
     font-size: 30px; }
 
+/*--Section 4 --*/
+.section4 {
+  background-color: #CDE4F5;
+  border: 2px solid #D3D0C6;
+  overflow: hidden; }
+
+.section4Inner {
+  margin-top: 20px; }
+
+.section4RightImg {
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out; }
+  .section4RightImg:hover {
+    -webkit-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+            transform: translateY(50px); }
+
+/*--- Section5---*/
+#section5ListWrap ol {
+  counter-reset: li;
+  /* Initiate a counter */
+  list-style: none;
+  /* Remove default numbering */
+  *list-style: decimal;
+  /* Keep using default numbering for IE6/7 */ }
+#section5ListWrap .rounded-list li {
+  font-size: 22px; }
+  #section5ListWrap .rounded-list li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #D3D0C6;
+    height: 2.5em;
+    width: 2.5em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    font-size: 23px;
+    -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out; }
+
+/*-- Section 6 --*/
+.section6BlockGrid {
+  display: block;
+  padding: 0;
+  margin: 0 -0.625rem; }
+  .section6BlockGrid:before, .section6BlockGrid:after {
+    content: " ";
+    display: table; }
+  .section6BlockGrid:after {
+    clear: both; }
+  .section6BlockGrid > li {
+    display: block;
+    float: left;
+    height: auto;
+    padding: 0 0.625rem 1.25rem; }
+  .section6BlockGrid > li {
+    list-style: none;
+    padding: 0 0.625rem 1.25rem;
+    width: 33.3333333333%; }
+    .section6BlockGrid > li:nth-of-type(1n) {
+      clear: none; }
+    .section6BlockGrid > li:nth-of-type(3n+1) {
+      clear: both; }
+
+.section6 {
+  background-color: #CDE4F5;
+  border: 2px solid #D3D0C6; }
+  .section6 ul {
+    list-style: none; }
+    .section6 ul li {
+      display: inline;
+      margin-bottom: 0px;
+      padding-bottom: 0px; }
+  .section6 .buttonNew {
+    margin-top: 20px; }
+
+.section6Inner {
+  margin-top: 20px;
+  margin-bottom: 50px; }
+
+.indicates-required {
+  font-size: 16px;
+  font-style: italic; }
+
+/*--footer --*/
+.footer {
+  background-color: #FFFBF6; }
+
+.footerInner {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 /*Style.scss*/
 @media only screen and (min-width: 40.063em) {
   .section1Left {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+
+  .section4Inner {
+    margin-top: 40px; } }
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 64.063em) {
   .section1Left {

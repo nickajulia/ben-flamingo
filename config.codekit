@@ -1087,6 +1087,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/leadpages-template\/img\/dash2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 106454,
+		"inputAbbreviatedPath": "\/leadpages-template\/img\/dash2.jpg",
+		"outputAbbreviatedPath": "\/leadpages-template\/img\/dash2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/leadpages-template\/img\/herobg1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1105,6 +1116,17 @@
 		"initialSize": 7.15777e+06,
 		"inputAbbreviatedPath": "\/leadpages-template\/img\/herobg2.jpg",
 		"outputAbbreviatedPath": "\/leadpages-template\/img\/herobg2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/leadpages-template\/img\/iphone.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 666661,
+		"inputAbbreviatedPath": "\/leadpages-template\/img\/iphone.png",
+		"outputAbbreviatedPath": "\/leadpages-template\/img\/iphone.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

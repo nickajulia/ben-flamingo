@@ -36,6 +36,14 @@ $section2Bg:#CDE4F5;
 $section2Border:#D3D0C6;
 
 
+$buttonColor:#FF9000;
+//$buttonColor:#FFBE00;
+
+$buttonHover:#FFC170;
+
+$footerbg:#FFFBF6;
+
+
 
 /* sitewide
 ---------------------------------------------------------- */
@@ -114,6 +122,20 @@ p{
 .mg-btm-sm{
 	margin-bottom: 40px;
 }
+
+
+
+/*--- Button ---*/
+.buttonNew{
+	background-color: $buttonColor;
+
+	&:hover{
+		background-color: $buttonHover;
+	}
+}
+
+
+
 
 /*---- Hero ---*/
 .hero{
@@ -206,6 +228,10 @@ p{
 	border:2px solid $section2Border;
 }
 
+.section2ButtonWrap{
+	margin-top: 20px;
+}
+
 
 /*--Section 3 --*/
 
@@ -243,6 +269,126 @@ p{
   h1{
   	font-size: 30px;
   }
+}
+
+
+/*--Section 4 --*/
+.section4{
+	background-color: $section2Bg;
+	border:2px solid $section2Border;
+	overflow: hidden;
+	
+}
+
+.section4Inner{
+	margin-top: 20px;
+}
+
+
+.section4RightImg{
+	  transform: translateY(100px);
+	  transition: all 0.25s ease-in-out;
+
+	  &:hover{
+
+	  transform: translateY(50px);
+
+	  }
+}
+
+/*--- Section5---*/
+
+#section5ListWrap {
+	ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+	}
+	 .rounded-list li{
+			font-size: 22px;
+
+
+		 &:before{
+		    content: counter(li);
+		    counter-increment: li;
+		    position: absolute; 
+		    left: -1.3em;
+		    top: 50%;
+		    margin-top: -1.3em;
+		    background: $roundListBullet;
+		    height: 2.5em;
+		    width: 2.5em;
+		    line-height: 2em;
+		    border: .3em solid #fff;
+		    text-align: center;
+		    font-weight: bold;
+		    border-radius: 2em;
+		   	font-size: 23px;
+		   	transition: all .3s ease-out;
+		}
+	}	
+}
+
+/*-- Section 6 --*/
+
+.section6BlockGrid {
+  @include block-grid(
+    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+    // Available options: 1-12 by default, and false.
+    $per-row: 3,
+
+    // This controls how much space is between each item in the block grid.
+    // Use a variable or any pixel or em values.
+    $spacing: $block-grid-default-spacing,
+
+    // This controls whether or not base styles come through, set to false to leave out.
+    $base-style: true
+  );
+}
+
+
+.section6{
+background-color: $section2Bg;
+border:2px solid $section2Border;
+
+
+	ul{
+		list-style: none;
+		li {
+		display: inline;
+		margin-bottom: 0px;
+		padding-bottom: 0px; 
+		}
+	}
+
+	.buttonNew{
+		margin-top: 20px;
+	}
+
+}
+
+
+
+.section6Inner{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+
+.indicates-required{
+	font-size: 16px;
+	font-style: italic;
+}
+
+/*--footer --*/
+.footer{
+	background-color: $footerbg;
+
+}
+
+.footerInner{
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /*Style.scss*/
