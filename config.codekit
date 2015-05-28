@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18966",
+"creatorBuild": "19033",
 "files": {
 	"\/bower_components\/jquery\/bower.json": {
 		"fileType": 524288,
@@ -948,6 +948,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/functions-dev.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/functions-dev.js",
+		"outputAbbreviatedPath": "\/js\/min\/functions-dev-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/leadpages-template-scss\/_largescreen.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -1004,7 +1015,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/leadpages-template-scss\/style.scss",
-		"outputAbbreviatedPath": "\/leadpages-template\/css\/style.css",
+		"outputAbbreviatedPath": "\/leadpages-template\/css\/LPstyle.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
@@ -1012,11 +1023,11 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/leadpages-template\/css\/style.css": {
+	"\/leadpages-template\/css\/LPstyle.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/leadpages-template\/css\/style.css",
+		"inputAbbreviatedPath": "\/leadpages-template\/css\/LPstyle.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1028,6 +1039,17 @@
 		"initialSize": 901,
 		"inputAbbreviatedPath": "\/leadpages-template\/img\/addfile.png",
 		"outputAbbreviatedPath": "\/leadpages-template\/img\/addfile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/leadpages-template\/img\/Amazon.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32285,
+		"inputAbbreviatedPath": "\/leadpages-template\/img\/Amazon.jpg",
+		"outputAbbreviatedPath": "\/leadpages-template\/img\/Amazon.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1098,6 +1120,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/leadpages-template\/img\/dash3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26176,
+		"inputAbbreviatedPath": "\/leadpages-template\/img\/dash3.jpg",
+		"outputAbbreviatedPath": "\/leadpages-template\/img\/dash3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/leadpages-template\/img\/eBay.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 78974,
+		"inputAbbreviatedPath": "\/leadpages-template\/img\/eBay.png",
+		"outputAbbreviatedPath": "\/leadpages-template\/img\/eBay.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/leadpages-template\/img\/herobg1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1109,17 +1153,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/leadpages-template\/img\/herobg2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 7.15777e+06,
-		"inputAbbreviatedPath": "\/leadpages-template\/img\/herobg2.jpg",
-		"outputAbbreviatedPath": "\/leadpages-template\/img\/herobg2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/leadpages-template\/img\/iphone.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1127,6 +1160,17 @@
 		"initialSize": 666661,
 		"inputAbbreviatedPath": "\/leadpages-template\/img\/iphone.png",
 		"outputAbbreviatedPath": "\/leadpages-template\/img\/iphone.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/leadpages-template\/img\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39433,
+		"inputAbbreviatedPath": "\/leadpages-template\/img\/logo.png",
+		"outputAbbreviatedPath": "\/leadpages-template\/img\/logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

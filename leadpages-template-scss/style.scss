@@ -155,8 +155,22 @@ p{
 	}
 }
 .heroInner{
-	margin-top: 50px;
+	margin:auto;
+	margin-top: 20px;
 	margin-bottom: 50px;
+}
+
+.heroHeader{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.heroHeaderImg{
+	float: left;
+	width: 30%;
+	
+	margin-right:10px;
+
 }
 
 
@@ -167,6 +181,11 @@ p{
 .section1Left{
 
 }
+
+.section1HeadImg{
+
+}
+
 .section1List
 {
 	list-style: none;
@@ -273,12 +292,17 @@ p{
   }
 }
 
+.dash3{
+	z-index: -1;
+	margin-bottom: 2px;
+}
 
 /*--Section 4 --*/
 .section4{
 	background-color: $section2Bg;
 	border:2px solid $section2Border;
 	overflow: hidden;
+	z-index: 1;
 	
 }
 

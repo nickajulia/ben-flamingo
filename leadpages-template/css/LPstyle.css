@@ -46,7 +46,8 @@ html, body {
   height: 100%; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin }
 
 *,
 *:before,
@@ -6908,15 +6909,25 @@ p {
 
 /*---- Hero ---*/
 .hero {
-  background: -webkit-linear-gradient(rgba(16, 156, 255, 0.8), #109cff), url(../img/herobg1.jpg);
-  background: linear-gradient(rgba(16, 156, 255, 0.8), #109cff), url(../img/herobg1.jpg);
+  background: -webkit-linear-gradient(rgba(16, 156, 255, 0.8), #109cff), url(http://mytotalinventory.com/wp-content/uploads/2015/05/herobg1.jpg);
+  background: linear-gradient(rgba(16, 156, 255, 0.8), #109cff), url(http://mytotalinventory.com/wp-content/uploads/2015/05/herobg1.jpg);
   background-size: cover; }
   .hero h1, .hero h2, .hero h3, .hero h4, .hero h5 {
     color: white; }
 
 .heroInner {
-  margin-top: 50px;
+  margin: auto;
+  margin-top: 20px;
   margin-bottom: 50px; }
+
+.heroHeader {
+  margin-left: 20px;
+  margin-top: 20px; }
+
+.heroHeaderImg {
+  float: left;
+  width: 30%;
+  margin-right: 10px; }
 
 /*---- Section1 ---*/
 .section1 {
@@ -7004,11 +7015,16 @@ p {
   .section3BlockGrid h1 {
     font-size: 30px; }
 
+.dash3 {
+  z-index: -1;
+  margin-bottom: 2px; }
+
 /*--Section 4 --*/
 .section4 {
   background-color: #CDE4F5;
   border: 2px solid #D3D0C6;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
 
 .section4Inner {
   margin-top: 20px; }
@@ -7115,8 +7131,8 @@ p {
 
 /*Style.scss*/
 @media only screen and (min-width: 40.063em) {
-  .section1Left {
-    margin-top: 10px; }
+  .heroHeaderImg {
+    width: 20%; }
 
   .section4Inner {
     margin-top: 40px; }
@@ -7145,9 +7161,15 @@ p {
         clear: both; } }
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 64.063em) {
+  .heroHeaderImg {
+    width: 15%; }
+
   .section1Left {
-    margin-top: 40px; } }
+    margin-top: 0px; }
+
+  #section5ListWrap {
+    max-width: 80%; } }
 /* min-width 641px, medium screens */
 /* min-width 1441px, xlarge screens */
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=LPstyle.css.map */
